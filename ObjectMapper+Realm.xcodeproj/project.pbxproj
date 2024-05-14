@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		911407B22BF2D02B00D1059C /* ObjectMapper_Realm.h in Headers */ = {isa = PBXBuildFile; fileRef = 911407B12BF2D02B00D1059C /* ObjectMapper_Realm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D05A842BF2D0EF0079042B /* ObjectMapper+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A622BF2D0EF0079042B /* ObjectMapper+Realm.swift */; };
+		91D05A852BF2D0EF0079042B /* Realm+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A632BF2D0EF0079042B /* Realm+ObjectMapper.swift */; };
+		91D05A862BF2D0EF0079042B /* RealmListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A642BF2D0EF0079042B /* RealmListTransform.swift */; };
+		91D05A872BF2D0EF0079042B /* RealmPropertyTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A652BF2D0EF0079042B /* RealmPropertyTransform.swift */; };
+		91D05A882BF2D0EF0079042B /* RealmPropertyTypeCastTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A662BF2D0EF0079042B /* RealmPropertyTypeCastTransform.swift */; };
+		91D05A892BF2D0EF0079042B /* RealmTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A672BF2D0EF0079042B /* RealmTransform.swift */; };
+		91D05A8A2BF2D0EF0079042B /* RealmTypeCastTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A682BF2D0EF0079042B /* RealmTypeCastTransform.swift */; };
+		91D05A9E2BF2D0EF0079042B /* ASCIICodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A7F2BF2D0EF0079042B /* ASCIICodes.swift */; };
+		91D05A9F2BF2D0EF0079042B /* MappingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A802BF2D0EF0079042B /* MappingError.swift */; };
+		91D05AA02BF2D0EF0079042B /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05A812BF2D0EF0079042B /* OptionalType.swift */; };
+		91D05AB62BF2D1AF0079042B /* BaseMappable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA12BF2D1AF0079042B /* BaseMappable+Additions.swift */; };
+		91D05AB72BF2D1AF0079042B /* BaseMappable+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA22BF2D1AF0079042B /* BaseMappable+Create.swift */; };
+		91D05AB82BF2D1AF0079042B /* Bool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA32BF2D1AF0079042B /* Bool+Extension.swift */; };
+		91D05AB92BF2D1AF0079042B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA42BF2D1AF0079042B /* Data+Extension.swift */; };
+		91D05ABA2BF2D1AF0079042B /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA52BF2D1AF0079042B /* Double+Extension.swift */; };
+		91D05ABB2BF2D1AF0079042B /* ImmutableMappable+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA62BF2D1AF0079042B /* ImmutableMappable+Create.swift */; };
+		91D05ABC2BF2D1AF0079042B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA72BF2D1AF0079042B /* Int+Extension.swift */; };
+		91D05ABD2BF2D1AF0079042B /* Mappable+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA82BF2D1AF0079042B /* Mappable+Create.swift */; };
+		91D05ABE2BF2D1AF0079042B /* ObjectMapper+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AA92BF2D1AF0079042B /* ObjectMapper+Additions.swift */; };
+		91D05ABF2BF2D1AF0079042B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AAA2BF2D1AF0079042B /* String+Extension.swift */; };
+		91D05AC02BF2D1AF0079042B /* StringProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AAB2BF2D1AF0079042B /* StringProtocol+Extension.swift */; };
+		91D05AC12BF2D1AF0079042B /* BoolTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AAD2BF2D1AF0079042B /* BoolTransform.swift */; };
+		91D05AC22BF2D1AF0079042B /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AAE2BF2D1AF0079042B /* DoubleTransform.swift */; };
+		91D05AC32BF2D1AF0079042B /* EnumTypeCastTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AAF2BF2D1AF0079042B /* EnumTypeCastTransform.swift */; };
+		91D05AC42BF2D1AF0079042B /* IntTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AB02BF2D1AF0079042B /* IntTransform.swift */; };
+		91D05AC52BF2D1AF0079042B /* ISO8601JustDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AB12BF2D1AF0079042B /* ISO8601JustDateTransform.swift */; };
+		91D05AC62BF2D1AF0079042B /* StringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AB22BF2D1AF0079042B /* StringTransform.swift */; };
+		91D05AC72BF2D1AF0079042B /* TimestampTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AB32BF2D1AF0079042B /* TimestampTransform.swift */; };
+		91D05AC82BF2D1AF0079042B /* TypeCastTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D05AB42BF2D1AF0079042B /* TypeCastTransform.swift */; };
+		CC597378E6E65C137FB02C94 /* Pods_ObjectMapper_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81CAF39B796A381F26E22E3 /* Pods_ObjectMapper_Realm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05DC10CEB8F5BFA993CEE4C4 /* Pods-ObjectMapper+Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectMapper+Realm.debug.xcconfig"; path = "Target Support Files/Pods-ObjectMapper+Realm/Pods-ObjectMapper+Realm.debug.xcconfig"; sourceTree = "<group>"; };
+		54E672DA9F23BD6852CD3A7F /* Pods-ObjectMapper+Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectMapper+Realm.release.xcconfig"; path = "Target Support Files/Pods-ObjectMapper+Realm/Pods-ObjectMapper+Realm.release.xcconfig"; sourceTree = "<group>"; };
+		911407AE2BF2D02B00D1059C /* ObjectMapper_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		911407B12BF2D02B00D1059C /* ObjectMapper_Realm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectMapper_Realm.h; sourceTree = "<group>"; };
+		91D05A622BF2D0EF0079042B /* ObjectMapper+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObjectMapper+Realm.swift"; sourceTree = "<group>"; };
+		91D05A632BF2D0EF0079042B /* Realm+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+ObjectMapper.swift"; sourceTree = "<group>"; };
+		91D05A642BF2D0EF0079042B /* RealmListTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmListTransform.swift; sourceTree = "<group>"; };
+		91D05A652BF2D0EF0079042B /* RealmPropertyTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPropertyTransform.swift; sourceTree = "<group>"; };
+		91D05A662BF2D0EF0079042B /* RealmPropertyTypeCastTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPropertyTypeCastTransform.swift; sourceTree = "<group>"; };
+		91D05A672BF2D0EF0079042B /* RealmTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTransform.swift; sourceTree = "<group>"; };
+		91D05A682BF2D0EF0079042B /* RealmTypeCastTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTypeCastTransform.swift; sourceTree = "<group>"; };
+		91D05A7F2BF2D0EF0079042B /* ASCIICodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCIICodes.swift; sourceTree = "<group>"; };
+		91D05A802BF2D0EF0079042B /* MappingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappingError.swift; sourceTree = "<group>"; };
+		91D05A812BF2D0EF0079042B /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		91D05AA12BF2D1AF0079042B /* BaseMappable+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseMappable+Additions.swift"; sourceTree = "<group>"; };
+		91D05AA22BF2D1AF0079042B /* BaseMappable+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseMappable+Create.swift"; sourceTree = "<group>"; };
+		91D05AA32BF2D1AF0079042B /* Bool+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Extension.swift"; sourceTree = "<group>"; };
+		91D05AA42BF2D1AF0079042B /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		91D05AA52BF2D1AF0079042B /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		91D05AA62BF2D1AF0079042B /* ImmutableMappable+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImmutableMappable+Create.swift"; sourceTree = "<group>"; };
+		91D05AA72BF2D1AF0079042B /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		91D05AA82BF2D1AF0079042B /* Mappable+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mappable+Create.swift"; sourceTree = "<group>"; };
+		91D05AA92BF2D1AF0079042B /* ObjectMapper+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObjectMapper+Additions.swift"; sourceTree = "<group>"; };
+		91D05AAA2BF2D1AF0079042B /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		91D05AAB2BF2D1AF0079042B /* StringProtocol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Extension.swift"; sourceTree = "<group>"; };
+		91D05AAD2BF2D1AF0079042B /* BoolTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolTransform.swift; sourceTree = "<group>"; };
+		91D05AAE2BF2D1AF0079042B /* DoubleTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTransform.swift; sourceTree = "<group>"; };
+		91D05AAF2BF2D1AF0079042B /* EnumTypeCastTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTypeCastTransform.swift; sourceTree = "<group>"; };
+		91D05AB02BF2D1AF0079042B /* IntTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTransform.swift; sourceTree = "<group>"; };
+		91D05AB12BF2D1AF0079042B /* ISO8601JustDateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601JustDateTransform.swift; sourceTree = "<group>"; };
+		91D05AB22BF2D1AF0079042B /* StringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTransform.swift; sourceTree = "<group>"; };
+		91D05AB32BF2D1AF0079042B /* TimestampTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampTransform.swift; sourceTree = "<group>"; };
+		91D05AB42BF2D1AF0079042B /* TypeCastTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeCastTransform.swift; sourceTree = "<group>"; };
+		B81CAF39B796A381F26E22E3 /* Pods_ObjectMapper_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectMapper_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		911407AB2BF2D02B00D1059C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC597378E6E65C137FB02C94 /* Pods_ObjectMapper_Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		911407A42BF2D02B00D1059C = {
+			isa = PBXGroup;
+			children = (
+				911407B02BF2D02B00D1059C /* ObjectMapper+Realm */,
+				911407AF2BF2D02B00D1059C /* Products */,
+				E42467981569877DAD383535 /* Pods */,
+				A97340D661E82425C2C13BA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		911407AF2BF2D02B00D1059C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				911407AE2BF2D02B00D1059C /* ObjectMapper_Realm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		911407B02BF2D02B00D1059C /* ObjectMapper+Realm */ = {
+			isa = PBXGroup;
+			children = (
+				91D05A832BF2D0EF0079042B /* Core */,
+				91D05A692BF2D0EF0079042B /* Realm */,
+				911407B12BF2D02B00D1059C /* ObjectMapper_Realm.h */,
+			);
+			path = "ObjectMapper+Realm";
+			sourceTree = "<group>";
+		};
+		91D05A692BF2D0EF0079042B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				91D05A622BF2D0EF0079042B /* ObjectMapper+Realm.swift */,
+				91D05A632BF2D0EF0079042B /* Realm+ObjectMapper.swift */,
+				91D05A642BF2D0EF0079042B /* RealmListTransform.swift */,
+				91D05A652BF2D0EF0079042B /* RealmPropertyTransform.swift */,
+				91D05A662BF2D0EF0079042B /* RealmPropertyTypeCastTransform.swift */,
+				91D05A672BF2D0EF0079042B /* RealmTransform.swift */,
+				91D05A682BF2D0EF0079042B /* RealmTypeCastTransform.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		91D05A822BF2D0EF0079042B /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				91D05A7F2BF2D0EF0079042B /* ASCIICodes.swift */,
+				91D05A802BF2D0EF0079042B /* MappingError.swift */,
+				91D05A812BF2D0EF0079042B /* OptionalType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		91D05A832BF2D0EF0079042B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				91D05AAC2BF2D1AF0079042B /* Extension */,
+				91D05AB52BF2D1AF0079042B /* Transform */,
+				91D05A822BF2D0EF0079042B /* Types */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		91D05AAC2BF2D1AF0079042B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91D05AA12BF2D1AF0079042B /* BaseMappable+Additions.swift */,
+				91D05AA22BF2D1AF0079042B /* BaseMappable+Create.swift */,
+				91D05AA32BF2D1AF0079042B /* Bool+Extension.swift */,
+				91D05AA42BF2D1AF0079042B /* Data+Extension.swift */,
+				91D05AA52BF2D1AF0079042B /* Double+Extension.swift */,
+				91D05AA62BF2D1AF0079042B /* ImmutableMappable+Create.swift */,
+				91D05AA72BF2D1AF0079042B /* Int+Extension.swift */,
+				91D05AA82BF2D1AF0079042B /* Mappable+Create.swift */,
+				91D05AA92BF2D1AF0079042B /* ObjectMapper+Additions.swift */,
+				91D05AAA2BF2D1AF0079042B /* String+Extension.swift */,
+				91D05AAB2BF2D1AF0079042B /* StringProtocol+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		91D05AB52BF2D1AF0079042B /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				91D05AAD2BF2D1AF0079042B /* BoolTransform.swift */,
+				91D05AAE2BF2D1AF0079042B /* DoubleTransform.swift */,
+				91D05AAF2BF2D1AF0079042B /* EnumTypeCastTransform.swift */,
+				91D05AB02BF2D1AF0079042B /* IntTransform.swift */,
+				91D05AB12BF2D1AF0079042B /* ISO8601JustDateTransform.swift */,
+				91D05AB22BF2D1AF0079042B /* StringTransform.swift */,
+				91D05AB32BF2D1AF0079042B /* TimestampTransform.swift */,
+				91D05AB42BF2D1AF0079042B /* TypeCastTransform.swift */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		A97340D661E82425C2C13BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B81CAF39B796A381F26E22E3 /* Pods_ObjectMapper_Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E42467981569877DAD383535 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05DC10CEB8F5BFA993CEE4C4 /* Pods-ObjectMapper+Realm.debug.xcconfig */,
+				54E672DA9F23BD6852CD3A7F /* Pods-ObjectMapper+Realm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		911407A92BF2D02B00D1059C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911407B22BF2D02B00D1059C /* ObjectMapper_Realm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		911407AD2BF2D02B00D1059C /* ObjectMapper+Realm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911407B52BF2D02B00D1059C /* Build configuration list for PBXNativeTarget "ObjectMapper+Realm" */;
+			buildPhases = (
+				417C78EF6BFC23F2EC32CE55 /* [CP] Check Pods Manifest.lock */,
+				911407A92BF2D02B00D1059C /* Headers */,
+				911407AA2BF2D02B00D1059C /* Sources */,
+				91B51A132BF398D500C63078 /* swiftinterface */,
+				911407AB2BF2D02B00D1059C /* Frameworks */,
+				911407AC2BF2D02B00D1059C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjectMapper+Realm";
+			productName = "ObjectMapper+Realm";
+			productReference = 911407AE2BF2D02B00D1059C /* ObjectMapper_Realm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		911407A52BF2D02B00D1059C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					911407AD2BF2D02B00D1059C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 911407A82BF2D02B00D1059C /* Build configuration list for PBXProject "ObjectMapper+Realm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 911407A42BF2D02B00D1059C;
+			productRefGroup = 911407AF2BF2D02B00D1059C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				911407AD2BF2D02B00D1059C /* ObjectMapper+Realm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		911407AC2BF2D02B00D1059C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		417C78EF6BFC23F2EC32CE55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectMapper+Realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B51A132BF398D500C63078 /* swiftinterface */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftinterface;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\n# Define the search and replace strings\nSEARCH_STRING1=\"Realm.RealmSwiftObject\"\nREPLACE_STRING1=\"RealmSwift.Object\"\n\nSEARCH_STRING2=\"Realm.RealmSwiftEmbeddedObject\"\nREPLACE_STRING2=\"RealmSwift.EmbeddedObject\"\n\n# Find all .swiftinterface files in the build directory\nSWIFT_INTERFACE_FILES=$(find \"$BUILT_PRODUCTS_DIR\" -name '*.swiftinterface')\n\n# Perform the search and replace in each .swiftinterface file\nfor file in $SWIFT_INTERFACE_FILES; do\n    sed -i '' \"s/$SEARCH_STRING1/$REPLACE_STRING1/g\" \"$file\"\n    sed -i '' \"s/$SEARCH_STRING2/$REPLACE_STRING2/g\" \"$file\"\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		911407AA2BF2D02B00D1059C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D05AC62BF2D1AF0079042B /* StringTransform.swift in Sources */,
+				91D05AC82BF2D1AF0079042B /* TypeCastTransform.swift in Sources */,
+				91D05AC12BF2D1AF0079042B /* BoolTransform.swift in Sources */,
+				91D05A842BF2D0EF0079042B /* ObjectMapper+Realm.swift in Sources */,
+				91D05AB92BF2D1AF0079042B /* Data+Extension.swift in Sources */,
+				91D05AC42BF2D1AF0079042B /* IntTransform.swift in Sources */,
+				91D05AB62BF2D1AF0079042B /* BaseMappable+Additions.swift in Sources */,
+				91D05ABC2BF2D1AF0079042B /* Int+Extension.swift in Sources */,
+				91D05AC02BF2D1AF0079042B /* StringProtocol+Extension.swift in Sources */,
+				91D05A9E2BF2D0EF0079042B /* ASCIICodes.swift in Sources */,
+				91D05AC22BF2D1AF0079042B /* DoubleTransform.swift in Sources */,
+				91D05AA02BF2D0EF0079042B /* OptionalType.swift in Sources */,
+				91D05ABE2BF2D1AF0079042B /* ObjectMapper+Additions.swift in Sources */,
+				91D05AB82BF2D1AF0079042B /* Bool+Extension.swift in Sources */,
+				91D05ABF2BF2D1AF0079042B /* String+Extension.swift in Sources */,
+				91D05AC32BF2D1AF0079042B /* EnumTypeCastTransform.swift in Sources */,
+				91D05AB72BF2D1AF0079042B /* BaseMappable+Create.swift in Sources */,
+				91D05A872BF2D0EF0079042B /* RealmPropertyTransform.swift in Sources */,
+				91D05ABA2BF2D1AF0079042B /* Double+Extension.swift in Sources */,
+				91D05A9F2BF2D0EF0079042B /* MappingError.swift in Sources */,
+				91D05ABB2BF2D1AF0079042B /* ImmutableMappable+Create.swift in Sources */,
+				91D05A892BF2D0EF0079042B /* RealmTransform.swift in Sources */,
+				91D05A852BF2D0EF0079042B /* Realm+ObjectMapper.swift in Sources */,
+				91D05A862BF2D0EF0079042B /* RealmListTransform.swift in Sources */,
+				91D05AC72BF2D1AF0079042B /* TimestampTransform.swift in Sources */,
+				91D05ABD2BF2D1AF0079042B /* Mappable+Create.swift in Sources */,
+				91D05AC52BF2D1AF0079042B /* ISO8601JustDateTransform.swift in Sources */,
+				91D05A8A2BF2D0EF0079042B /* RealmTypeCastTransform.swift in Sources */,
+				91D05A882BF2D0EF0079042B /* RealmPropertyTypeCastTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		911407B32BF2D02B00D1059C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		911407B42BF2D02B00D1059C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		911407B62BF2D02B00D1059C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05DC10CEB8F5BFA993CEE4C4 /* Pods-ObjectMapper+Realm.debug.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WDE622528T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tospery.omrl.ObjectMapper-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		911407B72BF2D02B00D1059C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E672DA9F23BD6852CD3A7F /* Pods-ObjectMapper+Realm.release.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WDE622528T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tospery.omrl.ObjectMapper-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		911407A82BF2D02B00D1059C /* Build configuration list for PBXProject "ObjectMapper+Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911407B32BF2D02B00D1059C /* Debug */,
+				911407B42BF2D02B00D1059C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911407B52BF2D02B00D1059C /* Build configuration list for PBXNativeTarget "ObjectMapper+Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911407B62BF2D02B00D1059C /* Debug */,
+				911407B72BF2D02B00D1059C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 911407A52BF2D02B00D1059C /* Project object */;
+}
