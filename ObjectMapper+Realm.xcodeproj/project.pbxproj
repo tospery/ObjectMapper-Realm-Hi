@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\n# Define the search and replace strings\nSEARCH_STRING1=\"Realm.RealmSwiftObject\"\nREPLACE_STRING1=\"RealmSwift.Object\"\n\nSEARCH_STRING2=\"Realm.RealmSwiftEmbeddedObject\"\nREPLACE_STRING2=\"RealmSwift.EmbeddedObject\"\n\n# Find all .swiftinterface files in the build directory\nSWIFT_INTERFACE_FILES=$(find \"$BUILT_PRODUCTS_DIR\" -name '*.swiftinterface')\n\n# Perform the search and replace in each .swiftinterface file\nfor file in $SWIFT_INTERFACE_FILES; do\n    sed -i '' \"s/$SEARCH_STRING1/$REPLACE_STRING1/g\" \"$file\"\n    sed -i '' \"s/$SEARCH_STRING2/$REPLACE_STRING2/g\" \"$file\"\ndone\n";
+			shellScript = "#!/bin/bash\n\n# Define the search and replace strings\nSEARCH_STRING1=\"Realm.RealmSwiftObject\"\nREPLACE_STRING1=\"RealmSwift.Object\"\n\nSEARCH_STRING2=\"Realm.RealmSwiftEmbeddedObject\"\nREPLACE_STRING2=\"RealmSwift.EmbeddedObject\"\n\n# Find all .swiftinterface files in the build directory\nSWIFT_INTERFACE_DIR=\"${CONFIGURATION_TEMP_DIR}/${TARGET_NAME}.${ACTION}/Objects-normal/${ARCHS}\"\necho \"SWIFT_INTERFACE_DIR: $SWIFT_INTERFACE_DIR\"\nSWIFT_INTERFACE_FILES=$(find \"$SWIFT_INTERFACE_DIR\" -name '*.swiftinterface')\n\n# Perform the search and replace in each .swiftinterface file\nfor file in $SWIFT_INTERFACE_FILES; do\n    sed -i '' \"s/$SEARCH_STRING1/$REPLACE_STRING1/g\" \"$file\"\n    sed -i '' \"s/$SEARCH_STRING2/$REPLACE_STRING2/g\" \"$file\"\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
